@@ -1,7 +1,7 @@
 {
-    "name": "omnipay/authorizenet",
+    "name": "dmandelb/authorizenet",
     "type": "library",
-    "description": "Authorize.Net gateway for the Omnipay payment processing library",
+    "description": "Authorize.Net gateway for the Omnipay payment processing library, slightly modified",
     "keywords": [
         "authorize net",
         "authorize",
@@ -12,7 +12,7 @@
         "pay",
         "payment"
     ],
-    "homepage": "https://github.com/thephpleague/omnipay-authorizenet",
+    "homepage": "https://github.com/dmandelb/omnipay-authorizenet",
     "license": "MIT",
     "authors": [
         {
@@ -22,6 +22,10 @@
         {
             "name": "Omnipay Contributors",
             "homepage": "https://github.com/thephpleague/omnipay-authorizenet/contributors"
+        },
+        {
+            "name": "Devin Mandelbaum",
+            "email": "devin.mandelbaum@gmail.com"
         }
     ],
     "autoload": {
