@@ -42,7 +42,12 @@ class AIMAuthorizeRequest extends AIMAbstractRequest
         $card->validate();
         $data->transactionRequest->payment->creditCard->cardNumber = $card->getNumber();
         $data->transactionRequest->payment->creditCard->expirationDate = $card->getExpiryDate('my');
-        $data->transactionRequest->payment->creditCard->cardCode = $card->getCvv();
+
+        $cvv = $card->getCvv();
+        if ($cvv) {
+            $data->transactionRequest->payment->creditCard->cardCode = $cvv;
+        }
+        
     }
 
     protected function addCustomerIP(\SimpleXMLElement $data)
